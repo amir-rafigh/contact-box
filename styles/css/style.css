@@ -1,3 +1,34 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+.container {
+  background-color: rgba(214, 212, 212, 0.568);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.box {
+  width: 250px;
+  height: 150px;
+  background-color: rgb(13, 42, 66);
+}
+
+.container-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-img img {
+  background-color: #fff;
+  width: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */
