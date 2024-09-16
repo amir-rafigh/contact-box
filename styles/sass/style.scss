@@ -6,19 +6,25 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color:  rgba(214, 212, 212, 0.568);
+}
 
 .container{
-    background-color: rgba(214, 212, 212, 0.568);
+    // background-color: rgba(214, 212, 212, 0.568);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
+    padding: 0 1rem;
 }
 .box{
     width: 250px;
-    height: 150px;
-    background-color: rgb(13, 42, 66);
+    height: 180px;
+    // background-color: rgb(13, 42, 66);
+    position: relative;
+    cursor: pointer;
     
 }
 .container-img{
@@ -27,8 +33,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
-        background-color: #fff;
-        width: 50px;
+    background-color: rgb(13, 42, 66);
+    @include transition(transform 0.3s);
+    svg{
+        fill: white;
+        width: 100px;
+        height: 100px;
+        
+        
     }
+    
 }
+.box:hover .container-img{
+    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+}
+
+
+
+
+
+.content{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(250, 55, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    
+    a{       
+        text-decoration: none;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+
+    }
+
+}
+
+h1{
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+}
+
+
